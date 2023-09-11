@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+</head>
+<body>
+    <h1>Welcome to the Landing Page</h1>
+    <p>Press the button 10 times to reveal your prize!</p>
+    <button id="revealButton" onclick="revealPrize()">Press Me</button>
+    <p id="prizeText" style="display: none;">You won a free night at Yala Park with Shahar!</p>
+
+    <script>
+        let buttonClicks = 0;
+
+        function revealPrize() {
+            buttonClicks++;
+            if (buttonClicks === 10) {
+                document.getElementById('prizeText').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
